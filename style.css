@@ -10,7 +10,8 @@
 .completed { 
     text-decoration: line-through; 
     color: gray; }
-.checkmark {
+
+.checkMark {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -18,17 +19,24 @@
   border: 2px solid #333;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-.checkmark.checked {
+.checkMark.checked {
   background-color: #333;
+
 }
 .task-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 8px;
     border-bottom: 1px solid #ccc;
+     gap: 10px;
 }
+
 .task-item:last-child {
     border-bottom: none;
 }
